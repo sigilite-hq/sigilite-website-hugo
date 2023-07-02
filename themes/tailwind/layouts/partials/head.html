@@ -1,0 +1,14 @@
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigilite Cyber Security</title>
+    <!-- resources.Get "style.css" will fetch the style.css file. 
+    It will not work if you mention the exact location like "./assets/style.css".-->
+    {{ $style := resources.Get "style.css" }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    {{ $js := resources.Get "main.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+</head>

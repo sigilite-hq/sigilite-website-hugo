@@ -1,0 +1,35 @@
+<!-- Contact modal -->
+<div id="contact-modal" class="modal fixed inset-0 flex items-center justify-center bg-custom-gray bg-opacity-50">
+    <div
+        class="modal-content bg-custom-gray-background border-2 rounded shadow-lg max-w-md mx-auto space-y-6 text-center">
+        <span class="close cursor-pointer text-right text-2xl block text-custom-gray-secondary">&times;</span>
+        <div class="flex justify-center items-center space-x-2">
+            <h2 class="text-2xl text-gray renogare-font">Contact</h2>
+        </div>
+        <form action="https://formsubmit.co/b2fbf7da9820caf89a743cf54415284e" method="POST" class="space-y-4">
+
+            <input type="email" id="email" name="_replyto" required placeholder="Email Address"
+                class="block w-full py-2 pl-2 border-2 border-custom-gray rounded shadow-lg focus:border-custom-orange focus:ring focus:ring-custom-orange focus:ring-opacity-50">
+
+            <select id="subject" name="_subject" required
+                class="block w-full py-2 pl-1 border-2 border-custom-gray rounded shadow-lg focus:ring focus:ring-custom-orange focus:ring-opacity-50">
+                <option value="Threat Hunting">Threat Hunting</option>
+                <option value="Threat Detection Engineering">Threat Detection Engineering</option>
+                <option value="Cyber Incident Preparedness">Cyber Incident Preparedness</option>
+                <option value="Other Inquiry">Other Inquiry</option>
+            </select>
+
+            <textarea id="message" name="message" required placeholder="Message"
+                class="block w-full py-2 pl-2 border-2 border-custom-gray rounded shadow-lg focus:border-custom-orange focus:ring focus:ring-custom-orange focus:ring-opacity-50"></textarea>
+
+            <button type="submit"
+                class="flex items-center justify-center mx-auto py-2 px-4 font-bold rounded shadow-lg text-sm text-white bg-custom-orange hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-orange">
+                Send
+                <i class="fa-solid fa-paper-plane text-white text-1xl ml-2"></i>
+            </button>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://sigilite.com">
+        </form>
+    </div>
+</div>
