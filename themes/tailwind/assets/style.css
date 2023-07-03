@@ -699,10 +699,6 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.overflow-y-auto{
-  overflow-y: auto;
-}
-
 .rounded{
   border-radius: 0.25rem;
 }
