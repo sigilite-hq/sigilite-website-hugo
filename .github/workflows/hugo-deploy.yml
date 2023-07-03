@@ -56,7 +56,7 @@ jobs:
           ls
       - name: Navigate to theme directory
         run: |
-          cd themes/tailwind \
+          cd themes/tailwind
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
