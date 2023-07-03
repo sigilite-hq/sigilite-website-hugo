@@ -1,3 +1,7 @@
 baseURL = 'https://sigilite.com'
 languageCode = 'en-us'
 title = 'Sigilite Cyber Security'
+
+[[module.mounts]]
+source = 'images'
+target = 'static/images'
