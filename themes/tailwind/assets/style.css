@@ -623,6 +623,10 @@ video {
   width: 4rem;
 }
 
+.w-4\/5{
+  width: 80%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -939,11 +943,20 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:w-3\/5{
+    width: 60%;
+  }
+
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:p-6{
     padding: 1.5rem;
+  }
+
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
