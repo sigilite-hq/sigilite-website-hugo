@@ -643,10 +643,6 @@ video {
   scroll-padding-bottom: 0.5rem;
 }
 
-.scroll-pb-2\.5{
-  scroll-padding-bottom: 0.625rem;
-}
-
 .list-disc{
   list-style-type: disc;
 }
@@ -742,6 +738,10 @@ video {
 
 .p-2{
   padding: 0.5rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .p-6{
@@ -928,4 +928,10 @@ video {
 
 .focus\:ring-offset-2:focus{
   --tw-ring-offset-width: 2px;
+}
+
+@media (min-width: 640px){
+  .sm\:p-6{
+    padding: 1.5rem;
+  }
 }
